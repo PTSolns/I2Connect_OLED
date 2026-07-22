@@ -82,7 +82,8 @@ For maximum compatibility, the module also includes a preinstalled angled male h
 | I2C Address             | 0x3C (Fixed)                   |
 | Operating Voltage       | 3.3 V / 5 V Rated              |
 | Communication Speed     | Standard & Fast (100 / 400 kHz)|
-| Dimensions              | 33.2 mm x 33.2 mm              |
+| OLED Dimensions              | 27.3 mm x 27.8 mm         |
+| PCB Dimensions              |35.9 mm x 40.3 mm         |  
 | Connectors              | 2x 4-pin 1mm JST SH            |
 
 ---
