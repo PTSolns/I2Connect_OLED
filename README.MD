@@ -136,9 +136,9 @@ The [*PTSolns IDE*](https://ptsolns.com/ide) can be used alongside the Arduino I
 
 ```cpp
 #include <Wire.h>
-#include <PTSOLNS_I2CONNECT_OLED.h>
+#include "PTSolns_I2Connect_OLED.h"
 
-PTSOLNS_I2CONNECT_OLED display;
+PTSolns_I2Connect_OLED display;
 
 void setup()
 {
@@ -153,13 +153,11 @@ void setup()
 
     display.clearDisplay();
     
-    // Configure text properties
-    display.setTextSize(2);
-    display.setTextColor(1); // 1 = White, 0 = Black
-    display.setCursor(10, 20);
+    // Set the starting coordinates for text
+    display.setCursor(0, 20);
     
     // Print to the screen buffer
-    display.print("PTSolns");
+    display.print("https://ptsolns.com/products/i2connect-oled");
     
     // Push the buffer to the physical screen
     display.display();
@@ -182,10 +180,15 @@ void loop()
 | display()         | Push the current buffer to the physical screen |
 | print()           | Print strings, integers, or floats to buffer   |
 | setCursor(x, y)   | Set the starting coordinates for text          |
-| setTextSize(s)    | Scale the text size (1 = default, 2 = double)  |
-| drawPixel(x, y, c)| Draw a single pixel at specific coordinates    |
-| drawLine(...)     | Draw a line between two points                 |
+| drawPixel(...)    | Draw a single pixel                            |
+| drawLine(...)     | Draw a straight line between two points        |
 | drawRect(...)     | Draw an outlined rectangle                     |
+| fillRect(...)     | Draw a solid filled rectangle                  |
+| drawRoundRect(...)| Draw an outlined rectangle with rounded corners|
+| drawCircle(...)   | Draw an outlined circle                        |
+| fillCircle(...)   | Draw a solid filled circle                     |
+| drawTriangle(...) | Draw an outlined triangle                      |
+| drawBitmap(...)   | Render a custom 1-bit array from PROGMEM       |
 
 ---
 
@@ -210,7 +213,8 @@ display.display();
 
 ```cpp
 // Draw a filled circle at x=64, y=32 with a radius of 10
-display.fillCircle(64, 32, 10, 1);
+// The final parameter 'true' turns the pixels ON
+display.fillCircle(64, 32, 10, true);
 display.display();
 ```
 
@@ -230,9 +234,10 @@ display.display();
 | Example                | Description                                          |
 | ---------------------- | ---------------------------------------------------- |
 | 01_HelloWorld          | Initialize the screen and print basic text           |
-| 02_SensorDisplay       | Formats live AHT20 sensor data on the screen         |
-| 03_GraphicsTest        | Demonstrates drawing lines, circles, and rectangles  |
+| 02_BasicGraphics       | Demonstrates drawing lines, circles, and rectangles  |
+| 03_SensorDashboard     | Formats live AHT20 sensor data on the screen         |
 | 04_CustomBitmap        | Shows how to render a custom logo from PROGMEM       |
+| 05_Full_Feature_Demo   | Animated stress-test of all graphics primitives      |
 
 ---
 
