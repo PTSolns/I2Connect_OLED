@@ -99,17 +99,6 @@ The PTSolns I2Connect: MUX module provides four independent I2C channels, allowi
 
 ---
 
-## Advanced Graphics & Geometry
-
-The **PTSolns I2Connect: OLED** library is intentionally designed to be extremely lightweight and strictly dependency-free. It provides a highly optimized, low-memory solution for printing text, sensor readouts, and basic status messages without consuming the limited SRAM on older microcontrollers like the Arduino UNO.
-
-If your project requires advanced visual elements—such as geometric shapes (circles, triangles, line graphs), custom variable-sized fonts, or bitmap logos—the *I2Connect: OLED* hardware module is 100% physically compatible with the open-source **Adafruit_SSD1306** graphics engine.
-
-To use advanced graphics, simply install the Adafruit SSD1306 and Adafruit GFX libraries and initialize the display using the module's fixed I2C address (`0x3C`). 
-
-*Note: Please reference the `04_Advanced_Adafruit_Graphics` sketch located in the `examples` folder of this library for a complete, plug-and-play template on how to configure the Adafruit engine for this specific hardware.*
-
----
 
 ## *PTSolns IDE*
 
