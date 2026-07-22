@@ -107,7 +107,7 @@ If your project requires advanced visual elements—such as geometric shapes (ci
 
 To use advanced graphics, simply install the Adafruit SSD1306 and Adafruit GFX libraries and initialize the display using the module's fixed I2C address (`0x3C`). 
 
-Note: Please reference the `04_Advanced_Adafruit_Graphics` sketch located in the `examples` folder of this library for a complete, plug-and-play template on how to configure the Adafruit engine for this specific hardware.
+*Note: Please reference the `04_Advanced_Adafruit_Graphics` sketch located in the `examples` folder of this library for a complete, plug-and-play template on how to configure the Adafruit engine for this specific hardware.*
 
 ---
 
