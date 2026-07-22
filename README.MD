@@ -180,15 +180,15 @@ void loop()
 | display()         | Push the current buffer to the physical screen |
 | print()           | Print strings, integers, or floats to buffer   |
 | setCursor(x, y)   | Set the starting coordinates for text          |
-| drawPixel(...)    | Draw a single pixel                            |
-| drawLine(...)     | Draw a straight line between two points        |
-| drawRect(...)     | Draw an outlined rectangle                     |
-| fillRect(...)     | Draw a solid filled rectangle                  |
-| drawRoundRect(...)| Draw an outlined rectangle with rounded corners|
-| drawCircle(...)   | Draw an outlined circle                        |
-| fillCircle(...)   | Draw a solid filled circle                     |
-| drawTriangle(...) | Draw an outlined triangle                      |
-| drawBitmap(...)   | Render a custom 1-bit array from PROGMEM       |
+| drawPixel()    | Draw a single pixel                            |
+| drawLine()     | Draw a straight line between two points        |
+| drawRect()     | Draw an outlined rectangle                     |
+| fillRect()     | Draw a solid filled rectangle                  |
+| drawRoundRect()| Draw an outlined rectangle with rounded corners|
+| drawCircle()   | Draw an outlined circle                        |
+| fillCircle()   | Draw a solid filled circle                     |
+| drawTriangle() | Draw an outlined triangle                      |
+| drawBitmap()   | Render a custom 1-bit array from PROGMEM       |
 
 ---
 
