@@ -62,6 +62,7 @@ void setup() {
         Serial.println("OLED not found. Check wiring / I2C address.");
         while (true) { }
     }
+    display.setRotation(true);
 }
 
 void loop() {
