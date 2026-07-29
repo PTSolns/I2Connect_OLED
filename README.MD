@@ -220,7 +220,18 @@ display.display();
 ```
 
 ---
+### Screen Rotation
 
+If your hardware enclosure requires the OLED to be mounted upside down, you can instantly flip the screen 180 degrees. Because this uses a native SSD1306 hardware command, there is zero processing overhead or memory penalty.
+
+```cpp
+// Call this after display.begin() to flip the screen 180 degrees
+display.setRotation(true);
+
+// Return to the default orientation
+display.setRotation(false);
+```
+---
 ## Typical Applications
 
 * Custom user interfaces and menus
