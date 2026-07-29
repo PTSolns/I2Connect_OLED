@@ -42,6 +42,7 @@ void setup() {
         Serial.println("OLED missing!");
         while(true) { }
     }
+    display.setRotation(true);
     
     if (!aht20.begin(Wire, AHT20_ADDRESS, I2C_CLOCK_HZ)) {
         Serial.println("AHT20 missing!");
