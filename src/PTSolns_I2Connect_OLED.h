@@ -12,15 +12,12 @@ public:
 
     PTSolns_I2Connect_OLED();
 
-    // Initialization
     bool begin(TwoWire &wirePort = Wire, uint8_t i2cAddress = DEFAULT_I2C_ADDRESS, uint32_t i2cClock = DEFAULT_I2C_CLOCK);
-
-    // Screen Control
     void clearDisplay();
     void display();
     void setCursor(int16_t x, int16_t y);
+    void setRotation(bool flip);
 
-    // Graphics primitives
     void drawPixel(int16_t x, int16_t y, bool color = true);
     void drawLine(int16_t x0, int16_t y0, int16_t x1, int16_t y1, bool color = true);
     void drawRect(int16_t x, int16_t y, int16_t w, int16_t h, bool color = true);
@@ -43,15 +40,12 @@ private:
     int16_t _cursorX;
     int16_t _cursorY;
     
-    // 128x64 display , 1024-byte buffer (128 * 64 / 8)
     uint8_t _buffer[1024]; 
 
-    // Low-level hardware communication
     void sendCommand(uint8_t command);
     void sendData(uint8_t data);
     bool isConnected();
 
-    // Internal helpers for compound shapes
     void drawCircleHelper(int16_t x0, int16_t y0, int16_t r, uint8_t cornerMask, bool color);
     void fillCircleHelper(int16_t x0, int16_t y0, int16_t r, uint8_t cornerMask, int16_t delta, bool color);
 };
