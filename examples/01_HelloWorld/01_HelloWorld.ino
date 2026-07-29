@@ -56,6 +56,7 @@ void setup() {
 
     // The screen will remain blank until the buffer is explicitly pushed
     display.display();
+    display.setRotation(true);
 }
 
 void loop() {
