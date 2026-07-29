@@ -39,6 +39,7 @@ void setup() {
         Serial.println("OLED not found. Please check wiring.");
         while (true) { }
     }
+    display.setRotation(true);
 }
 
 void loop() {
