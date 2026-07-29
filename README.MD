@@ -219,7 +219,6 @@ display.fillCircle(64, 32, 10, true);
 display.display();
 ```
 
----
 ### Screen Rotation
 
 If your hardware enclosure requires the OLED to be mounted upside down, you can instantly flip the screen 180 degrees. Because this uses a native SSD1306 hardware command, there is zero processing overhead or memory penalty.
