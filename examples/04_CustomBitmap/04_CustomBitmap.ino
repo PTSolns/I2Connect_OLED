@@ -56,6 +56,7 @@ void setup() {
     display.print("System Boot");
 
     display.display();
+    display.setRotation(true);
 }
 
 void loop() {
