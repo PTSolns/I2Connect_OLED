@@ -231,6 +231,7 @@ display.setRotation(true);
 display.setRotation(false);
 ```
 
+---
 ## Typical Applications
 
 * Custom user interfaces and menus
