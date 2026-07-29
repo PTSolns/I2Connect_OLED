@@ -230,7 +230,7 @@ display.setRotation(true);
 // Return to the default orientation
 display.setRotation(false);
 ```
----
+
 ## Typical Applications
 
 * Custom user interfaces and menus
